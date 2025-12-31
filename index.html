@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>香港中文大学专业课程资源索引</title>
+    <style>
+        :root {
+            --cuhk-purple: #4a148c;
+            --cuhk-gold: #fbc02d;
+            --sidebar-bg: #2c3e50;
+            --card-hover: #f1f4f9;
+        }
+        body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; margin: 0; display: flex; background-color: #f4f7f6; color: #333; }
+        
+        /* 侧边栏导航 */
+        nav { width: 280px; background-color: var(--sidebar-bg); color: white; height: 100vh; position: fixed; overflow-y: auto; padding: 20px 0; }
+        nav h2 { padding: 0 25px; font-size: 1.2em; color: var(--cuhk-gold); border-bottom: 1px solid #3e4f5f; padding-bottom: 15px; }
+        nav ul { list-style: none; padding: 0; }
+        nav li a { display: block; padding: 12px 25px; color: #bdc3c7; text-decoration: none; font-size: 0.9em; transition: 0.3s; }
+        nav li a:hover { background: #34495e; color: white; padding-left: 30px; }
+
+        /* 主内容区 */
+        main { margin-left: 280px; padding: 40px; width: 100%; }
+        header { margin-bottom: 40px; text-align: left; }
+        h1 { color: var(--cuhk-purple); font-size: 2.2em; margin: 0; }
+        .breadcrumb { color: #7f8c8d; margin-top: 5px; }
+
+        /* 学院卡片展示 */
+        .faculty-section { margin-bottom: 50px; }
+        .faculty-header { display: flex; align-items: center; margin-bottom: 20px; border-bottom: 2px solid var(--cuhk-gold); padding-bottom: 10px; }
+        .faculty-header h3 { margin: 0; color: var(--cuhk-purple); font-size: 1.5em; }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+        .card { background: white; border: 1px solid #e1e8ed; border-radius: 10px; padding: 20px; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); text-decoration: none; color: inherit; display: flex; flex-direction: column; justify-content: space-between; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); border-color: var(--cuhk-purple); }
+        .card .title { font-weight: 600; color: #2c3e50; margin-bottom: 10px; line-height: 1.4; }
+        .card .file-info { font-size: 0.8em; color: #95a5a6; display: flex; align-items: center; }
+        .card .file-info::before { content: "📄"; margin-right: 5px; }
+
+        @media (max-width: 900px) {
+            nav { width: 100%; height: auto; position: relative; }
+            main { margin-left: 0; padding: 20px; }
+            body { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <h2>学院导航</h2>
+    <ul>
+        <li><a href="#earth">地球与环境</a></li>
+        <li><a href="#life">生命科学学院</a></li>
+        <li><a href="#eng">工程学院</a></li>
+        <li><a href="#med">医学院</a></li>
+        <li><a href="#sci">理学院</a></li>
+        <li><a href="#soc">社会科学院</a></li>
+    </ul>
+</nav>
+
+<main>
+    <header>
+        <h1>CUHK 专业课程索引</h1>
+        <p class="breadcrumb">Root / All Faculties / Programmes</p>
+    </header>
+
+    <section id="earth" class="faculty-section">
+        <div class="faculty-header"><h3>Earth and Environmental Sciences</h3></div>
+        <div class="grid">
+            <a href="Earth%20and%20Environmental%20Sciences/Earth%20and%20Environmental%20Sciences.html" class="card">
+                <span class="title">Earth and Environmental Sciences</span>
+                <span class="file-info">HTML Resource</span>
+            </a>
+        </div>
+    </section>
+
+    <section id="life" class="faculty-section">
+        <div class="faculty-header"><h3>School of Life Science</h3></div>
+        <div class="grid">
+            <a href="School%20of%20Life%20Science/Biochemistry%20vs%20Biology%20vs%20Cell%20vs%20Molecular%20Biology%20vs%20Molecular%20Biotechnology.html" class="card" style="border-left: 5px solid #27ae60;">
+                <span class="title">生命科学四专业深度对比 [推荐]</span>
+                <span class="file-info">Comparison Report</span>
+            </a>
+            <a href="School%20of%20Life%20Science/Biochemistry.html" class="card"><span class="title">Biochemistry</span><span class="file-info">Major Info</span></a>
+            <a href="School%20of%20Life%20Science/Biology.html" class="card"><span class="title">Biology</span><span class="file-info">Major Info</span></a>
+            <a href="School%20of%20Life%20Science/Cell%20&%20Molecular.html" class="card"><span class="title">Cell & Molecular Biology</span><span class="file-info">Major Info</span></a>
+            <a href="School%20of%20Life%20Science/Molecular%20Biotechnology.html" class="card"><span class="title">Molecular Biotechnology</span><span class="file-info">Major Info</span></a>
+        </div>
+    </section>
+
+    <section id="eng" class="faculty-section">
+        <div class="faculty-header"><h3>Faculty of Engineering</h3></div>
+        <div class="grid">
+            <a href="Faculty%20of%20Engineering/Aerospace%20Science%20and%20Earth%20Informatics.html" class="card"><span class="title">Aerospace Science & Informatics</span><span class="file-info">HTML File</span></a>
+            <a href="Faculty%20of%20Engineering/Artificial%20Intelligence%20Systems%20and%20Technologies.html" class="card"><span class="title">AI Systems & Tech</span><span class="file-info">HTML File</span></a>
+            <a href="Faculty%20of%20Engineering/Biomedical%20Engineering.html" class="card"><span class="title">Biomedical Engineering</span><span class="file-info">HTML File</span></a>
+            <a href="Faculty%20of%20Engineering/Computational%20Data%20Science.html" class="card"><span class="title">Computational Data Science</span><span class="file-info">HTML File</span></a>
+            <a href="Faculty%20of%20Engineering/Energy%20and%20Environmental%20Engineering.html" class="card"><span class="title">Energy & Environmental Eng</span><span class="file-info">HTML File</span></a>
+            <a href="Faculty%20of%20Engineering/Financial%20Technology.html" class="card"><span class="title">Financial Technology (FinTech)</span><span class="file-info">HTML File</span></a>
+            <a href="Faculty%20of%20Engineering/Information%20Engineering.html" class="card"><span class="title">Information Engineering</span><span class="file-info">HTML File</span></a>
+            <a href="Faculty%20of%20Engineering/Interdisciplinary%20Data%20Analytics%20&%20X%20Double%20Major%20Programme.html" class="card"><span class="title">INDAN Double Major</span><span class="file-info">HTML File</span></a>
+            <a href="Faculty%20of%20Engineering/Learning%20Design%20and%20Technology.html" class="card"><span class="title">Learning Design & Tech</span><span class="file-info">HTML File</span></a>
+            <a href="Faculty%20of%20Engineering/Materials%20Science%20and%20Engineering.html" class="card"><span class="title">Materials Science & Eng</span><span class="file-info">HTML File</span></a>
+            <a href="Faculty%20of%20Engineering/Mathematics%20and%20Information%20Engineering.html" class="card"><span class="title">Math & Info Engineering</span><span class="file-info">HTML File</span></a>
+            <a href="Faculty%20of%20Engineering/Mechanical%20and%20Automation%20Engineering.html" class="card"><span class="title">Mechanical & Automation</span><span class="file-info">HTML File</span></a>
+            <a href="Faculty%20of%20Engineering/Systems%20Engineering%20and%20Engineering%20Management.html" class="card"><span class="title">Systems Engineering & Mgmt</span><span class="file-info">HTML File</span></a>
+        </div>
+    </section>
+
+    <section id="med" class="faculty-section">
+        <div class="faculty-header"><h3>Faculty of Medicine</h3></div>
+        <div class="grid">
+            <a href="Faculty%20of%20Medicine/Biomedical%20Sciences.html" class="card"><span class="title">Biomedical Sciences</span><span class="file-info">HTML File</span></a>
+            <a href="Faculty%20of%20Medicine/Biotechnology,%20Entrepreneurship%20and%20Healthcare%20Management.html" class="card"><span class="title">Biotech & Healthcare Mgmt</span><span class="file-info">HTML File</span></a>
+        </div>
+    </section>
+
+    <section id="sci" class="faculty-section">
+        <div class="faculty-header"><h3>Faculty of Science</h3></div>
+        <div class="grid">
+            <a href="Faculty%20of%20Science/Earth%20and%20Environmental%20Sciences.html" class="card"><span class="title">Earth & Environmental Sciences</span><span class="file-info">HTML File</span></a>
+            <a href="Faculty%20of%20Science/Enrichment%20Mathematics.html" class="card"><span class="title">Enrichment Mathematics</span><span class="file-info">HTML File</span></a>
+            <a href="Faculty%20of%20Science/Enrichment%20Stream%20in%20Theoretical%20Physics.html" class="card"><span class="title">Theoretical Physics</span><span class="file-info">HTML File</span></a>
+            <a href="Faculty%20of%20Science/Quantitative%20Finance%20and%20Risk%20Management%20Science.html" class="card"><span class="title">QFin & Risk Management</span><span class="file-info">HTML File</span></a>
+            <a href="Faculty%20of%20Science/Risk%20Management%20Science.html" class="card"><span class="title">Risk Management Science</span><span class="file-info">HTML File</span></a>
+        </div>
+    </section>
+
+    <section id="soc" class="faculty-section">
+        <div class="faculty-header"><h3>Faculty of Social Science</h3></div>
+        <div class="grid">
+            <a href="Faculty%20of%20Social%20Science/Data%20Science%20and%20Policy%20Studies.html" class="card"><span class="title">Data Science & Policy Studies</span><span class="file-info">HTML File</span></a>
+        </div>
+    </section>
+
+</main>
+
+</body>
+</html>
